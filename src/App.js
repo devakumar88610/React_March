@@ -16,6 +16,7 @@ const App = () => {
                 <Route path="state" element={<State />} />
                 <Route path="event" element={<Event />} />
             </Routes>
+
         </BrowserRouter>
     </>
 

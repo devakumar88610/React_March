@@ -1,4 +1,5 @@
 import React from 'react'
+import EmployeeList from './EmployeeList'
 import StateClass from './StateClass'
 import StateFun from './StateFun'
 
@@ -16,6 +17,7 @@ const State = () => {
                     <StateFun />
                 </div>
             </div>
+            <EmployeeList />
         </div>
     )
 }
