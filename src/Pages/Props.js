@@ -1,6 +1,6 @@
 import React from 'react'
-import PropsDrilling from "./PropsDrillingFun/FunCompA"
-import Example from "./PropsClass/ClassCompA"
+import PropsDrilling from "../Components/Props/PropsDrillingFun/FunCompA"
+import Example from "../Components/Props/PropsClass/ClassCompA"
 
 const Props = () => {
     return (

@@ -1,6 +1,6 @@
 import React from 'react'
-import EventClass from './EventClass'
-import EventFun from './EventFun'
+import EventClass from '../Components/Event/EventClass'
+import EventFun from '../Components/Event/EventFun'
 
 const Event = () => {
     return (

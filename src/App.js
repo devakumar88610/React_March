@@ -1,10 +1,15 @@
 import React from 'react'
-import Navbar from './Navbar/Navbar'
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import Props from './Components/Props/Props'
-import State from './Components/State/State'
-import Event from './Components/Event/Event'
-import Home from './Components/Home'
+
+import Navbar from './Navbar/Navbar'
+import Props from './Pages/Props'
+import State from './Pages/State'
+import Event from './Pages/Event'
+import Home from './Pages/Home'
+
+// Login Import
+import Login from './Components/Registration/Login'
+import Registration from './Components/Registration/Registration'
 
 const App = () => {
     return <>
@@ -15,6 +20,10 @@ const App = () => {
                 <Route path="props" element={<Props />} />
                 <Route path="state" element={<State />} />
                 <Route path="event" element={<Event />} />
+
+                {/* Login Routes */}
+                <Route path='/login' element={<Login />} />
+                <Route path='/register' element={<Registration />} />
             </Routes>
 
         </BrowserRouter>
