@@ -21,6 +21,9 @@ const Navbar = () => {
                             <li>
                                 <Link to="event" className='hover:opacity-80'>Event</Link>
                             </li>
+                            <li>
+                                <Link to="axios" className='hover:opacity-80'>Axios</Link>
+                            </li>
                         </ul>
                         <button className='bg-white px-4 py-1 font-medium hover:opacity-90'>
                             <Link to="/login">Login</Link>

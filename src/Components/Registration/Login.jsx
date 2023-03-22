@@ -15,6 +15,7 @@ export class Login extends Component {
 
     updateHandler = (event) => {
         this.setState({ [event.target.name]: event.target.value })
+        console.log(this.state);
     }
 
     submitHandler = (event) => {
@@ -24,11 +25,13 @@ export class Login extends Component {
     render() {
         return (
             <div className="h-screen flex justify-center items-center">
+
                 <form
                     onSubmit={this.submitHandler}
                     className='w-[350px] bg-slate-100 p-5 rounded-xl shadow-xl'>
-                    <h1 className='text-center mb-10 font-medium text-2xl' >Login Now</h1>
                     {/* <pre>{JSON.stringify(this.state)}</pre> */}
+                    <h1 className='text-center mb-10 font-medium text-2xl' >Login now</h1>
+
                     <div>
                         <input
                             className='px-3 py-1 mb-5 w-full outline-none'
@@ -46,10 +49,10 @@ export class Login extends Component {
                             name="password" />
                     </div>
                     <div className='mb-5 text-blue-500'>
-                        <a href='#'>Forgot Password?</a>
+                        <a className='text-sm font-medium' href='#'>Forgot password?</a>
                     </div>
                     <button className='bg-blue-500 text-white px-5 py-1 w-full hover:opacity-90'>Login</button>
-                    <div className='text-sm mt-5 text-center'>
+                    <div className='text-sm font-medium mt-5 text-center'>
                         <p>don't have an account?
                             <Link className='text-blue-500 ml-1'
                                 to="/register"
