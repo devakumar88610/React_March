@@ -15,6 +15,7 @@ const Navbar = () => {
                             <li>
                                 <Link to="props" className='hover:opacity-80'>Props</Link>
                             </li>
+
                             <li>
                                 <Link to="state" className='hover:opacity-80' >State</Link>
                             </li>
