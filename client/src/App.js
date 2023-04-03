@@ -12,6 +12,10 @@ import Login from './Components/Registration/Login'
 import Registration from './Components/Registration/Registration'
 import Axios from './Pages/Axios'
 
+// User App
+import UserAppClass from './Components/UserappClass/UserApp'
+import UserAppFun from './Components/UserappFunctional/UserApp'
+
 const App = () => {
     return <>
         <BrowserRouter>
@@ -22,6 +26,8 @@ const App = () => {
                 <Route path="state" element={<State />} />
                 <Route path="event" element={<Event />} />
                 <Route path="axios" element={<Axios />} />
+                <Route path="user-app-class" element={<UserAppClass />} />
+                <Route path="user-app-fun" element={<UserAppFun />} />
 
                 {/* Login Routes */}
                 <Route path='/login' element={<Login />} />
