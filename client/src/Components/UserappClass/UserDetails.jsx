@@ -1,8 +1,4 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
-import { AiOutlineClose } from 'react-icons/ai'
-import { FiMail } from 'react-icons/fi'
-
 
 class UserDetails extends Component {
 
