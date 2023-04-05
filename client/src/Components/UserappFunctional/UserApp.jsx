@@ -4,7 +4,7 @@ import UserList from './UserList'
 
 const UserApp = () => {
 
-    const [state, setState] = useState({ user: {} })
+    const [state, setState] = useState({ user: {}, selectedUser: {} })
 
     useEffect(() => {
         Axios.get('https://dummyjson.com/users')
@@ -14,12 +14,14 @@ const UserApp = () => {
             .catch()
     })
 
+    const selectedUser = () => {
 
+    }
 
     return (
         <>
             <div className="container mt-5">
-                {/* <pre>{JSON.stringify(state.user)}</pre> */}
+                <pre>{JSON.stringify(state.user)}</pre>
 
                 <div>
                     {

@@ -6,7 +6,7 @@ import Props from './Pages/Props'
 import State from './Pages/State'
 import Event from './Pages/Event'
 import Home from './Pages/Home'
-
+import Redux from './Pages/Redux'
 // Login Import
 import Login from './Components/Registration/Login'
 import Registration from './Components/Registration/Registration'
@@ -28,6 +28,7 @@ const App = () => {
                 <Route path="axios" element={<Axios />} />
                 <Route path="user-app-class" element={<UserAppClass />} />
                 <Route path="user-app-fun" element={<UserAppFun />} />
+                <Route path="redux" element={<Redux />} />
 
                 {/* Login Routes */}
                 <Route path='/login' element={<Login />} />

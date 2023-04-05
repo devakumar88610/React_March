@@ -27,5 +27,9 @@ const navLinks = [
         name: "User App Fun",
         path: "user-app-fun",
     },
+    {
+        name: "Redux",
+        path: "redux",
+    },
 ]
 export default navLinks
