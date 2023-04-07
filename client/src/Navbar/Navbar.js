@@ -12,7 +12,7 @@ const Navbar = () => {
                         <ul className='flex space-x-5 text-white'>
                             {
                                 navLinks.map(({ name, path }, index) => {
-                                    return <li key={index} className="lg:block hidden">
+                                    return <li key={index} className="lg:block hidden active:">
                                         <Link to={path} className='hover:opacity-80'>{name}</Link>
                                     </li>
                                 })

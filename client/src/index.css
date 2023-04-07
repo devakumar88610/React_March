@@ -8,6 +8,23 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+*::-webkit-scrollbar {
+    width: 12px;
+    border-radius: 20px;
+  }
+  
+*::-webkit-scrollbar-track {
+    background: white;
+    border-radius: 5px;
+  }
+  
+*::-webkit-scrollbar-thumb {
+    background-color: #d8d8d8;
+    border-radius: 14px;
+    border: 3px solid white;
+  }
+
+
 @layer components{
     .container{
         @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8

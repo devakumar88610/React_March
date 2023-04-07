@@ -1,4 +1,4 @@
-import { msgOne, msgTwo } from './messageAction'
+import { MSG_ONE, MSG_TWO } from './messageAction'
 
 const initialState = {
     message: "Hello, Developers"
@@ -6,9 +6,9 @@ const initialState = {
 
 let messageReducer = (state = initialState, action) => {
     switch (action.type) {
-        case msgOne:
+        case MSG_ONE:
             return { message: 'Welcome to my page' }
-        case msgTwo:
+        case MSG_TWO:
             return { message: 'Lets get started' }
         default:
             return state

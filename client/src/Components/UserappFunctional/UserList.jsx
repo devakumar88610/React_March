@@ -1,6 +1,9 @@
 import React from 'react'
+import UserDetails from './UserDetails'
+
 
 const UserList = (props) => {
+
     return (
         <>
             {/* <pre>{JSON.stringify(props.users)}</pre> */}
@@ -29,6 +32,9 @@ const UserList = (props) => {
                     }
                 </tbody>
             </table>
+
+
+
         </>
     )
 }

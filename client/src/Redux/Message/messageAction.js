@@ -1,15 +1,15 @@
-const msgOne = 'msgOne'
-const msgTwo = 'msgTwo'
+const MSG_ONE = 'MSG_ONE'
+const MSG_TWO = 'MSG_TWO'
 
 const msgOneAction = () => {
     return {
-        type: msgOne
+        type: MSG_ONE
     }
 }
 const msgTwoAction = () => {
     return {
-        type: msgTwo
+        type: MSG_TWO
     }
 }
 
-export { msgOne, msgTwo, msgOneAction, msgTwoAction }
+export { MSG_ONE, MSG_TWO, msgOneAction, msgTwoAction }

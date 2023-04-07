@@ -4,7 +4,7 @@ import { msgOneAction, msgTwoAction } from '../Redux/Message/messageAction'
 
 const Message = () => {
 
-    let messages = useSelector((state) => {
+    const messages = useSelector((state) => {
         return state
     })
 
@@ -18,7 +18,7 @@ const Message = () => {
     }
 
     return (
-        <div className='bg-slate-100 w-[350px] shadow-2xl shadow-blue-300 p-6 text-center border border-gray-300 rounded-2xl'>
+        <div className='bg-slate-200 w-[350px] shadow-2xl shadow-blue-300 p-6 text-center border border-gray-300 rounded-2xl hover:scale-110 transition-all'>
             <h1 className='mb-5'>{messages.messages.message}</h1>
             {/* <pre>{JSON.stringify(messages.messages.message)}</pre> */}
             <div className='flex items-center gap-5'>
