@@ -75,15 +75,18 @@ class Registration extends Component {
                             <label for="link-checkbox"
                                 class="ml-2 text-sm font-medium">I agree with the
                                 <a href="#"
-                                    class="text-blue-600 ml-1">terms and conditions</a>.</label>
+                                    class="text-blue-600 ml-1">terms and conditions</a>
+                            </label>
                         </div>
 
                         <button className='bg-blue-500 px-3 py-1 text-white w-full'>Sign up</button>
 
                         <div class="text-sm font-medium mt-5 ">
-                            <p className='text-center'>already have account? <Link to="/login" element={<Login />} className='text-blue-500'>
-                                Login
-                            </Link></p>
+                            <p className='text-center'>already have account?
+                                <Link to="/login" element={<Login />}
+                                    className='text-blue-500'>
+                                    Login
+                                </Link></p>
                         </div>
                     </form>
                 </div>

@@ -27,6 +27,7 @@ class UserList extends Component {
                                 return <tr key={user.id}
                                     className='hover:bg-slate-100 cursor-pointer'
                                     onClick={this.selectedUser.bind(this, user)}>
+
                                     <td className='text-center'>{user.id}</td>
                                     <td className='flex justify-center my-2'><img className='w-8 h-8 bg-slate-200 rounded-full' src={user.image} alt="" /></td>
                                     <td>{user.firstName}</td>

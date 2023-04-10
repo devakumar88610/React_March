@@ -24,7 +24,7 @@ export class Login extends Component {
 
     render() {
         return (
-            <div className="h-screen flex justify-center items-center">
+            <div className="flex justify-center items-center">
 
                 <form
                     onSubmit={this.submitHandler}

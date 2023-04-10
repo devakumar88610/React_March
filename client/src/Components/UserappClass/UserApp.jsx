@@ -30,9 +30,6 @@ class UserApp extends Component {
     handleselectedUser = (user) => {
         this.setState({ selectedUser: user, showModal: true })
     }
-    handleCloseModal() {
-        this.setState({ showModal: false });
-    }
 
     render() {
         return (
@@ -51,7 +48,7 @@ class UserApp extends Component {
                         <div>
                             {
                                 Object.keys(this.state.user).length > 0 ? <>
-                                    <UserDetails user={this.state.selectedUser} isVisible={this.handleselectedUser} close={this.handleCloseModal} />
+                                    <UserDetails user={this.state.selectedUser} />
 
                                 </> : null
                             }

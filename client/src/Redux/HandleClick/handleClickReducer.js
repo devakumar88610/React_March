@@ -7,9 +7,9 @@ const initialState = {
 const HandleClickReducer = (state = initialState, action) => {
     switch (action.type) {
         case OPEN:
-            return { state, isOpen: true }
+            return { isOpen: true }
         case CLOSE:
-            return { state, isOpen: false }
+            return { isOpen: false }
         default:
             return state
     }

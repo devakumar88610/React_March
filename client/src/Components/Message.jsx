@@ -18,7 +18,8 @@ const Message = () => {
     }
 
     return (
-        <div className='bg-slate-200 w-[350px] shadow-2xl shadow-blue-300 p-6 text-center border border-gray-300 rounded-2xl hover:scale-110 transition-all'>
+        <div className='bg-slate-200 w-[350px] shadow-2xl shadow-blue-300 p-6 text-center 
+        border border-gray-300 rounded-2xl hover:scale-110 transition-all'>
             <h1 className='mb-5'>{messages.messages.message}</h1>
             {/* <pre>{JSON.stringify(messages.messages.message)}</pre> */}
             <div className='flex items-center gap-5'>
@@ -34,6 +35,7 @@ const Message = () => {
                     className='w-full bg-red-500 px-3 py-2 font-semibold text-white border-2 
                 border-red-500 hover:bg-white hover:text-black transition-all duration-500'
                 >Let's start</button>
+
             </div>
         </div>
     )

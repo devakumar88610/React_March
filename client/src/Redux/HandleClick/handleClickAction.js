@@ -1,12 +1,12 @@
 const OPEN = 'OPEN'
 const CLOSE = 'CLOSE'
 
-const handleOpenAction = () => {
+const openAction = () => {
     return { type: OPEN }
 }
 
-const handleCloseAction = () => {
+const closeAction = () => {
     return { type: CLOSE }
 }
 
-export { handleOpenAction, handleCloseAction, OPEN, CLOSE }
+export { openAction, closeAction, OPEN, CLOSE }

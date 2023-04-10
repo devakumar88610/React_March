@@ -6,7 +6,7 @@ import { HandleClickReducer } from './HandleClick/handleClickReducer';
 const rootReducer = combineReducers({
     messages: messageReducer,
     counter: counterReducer,
-    handleclick: HandleClickReducer
+    isOpen: HandleClickReducer
 
 });
 

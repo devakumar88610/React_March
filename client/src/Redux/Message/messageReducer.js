@@ -7,13 +7,12 @@ const initialState = {
 let messageReducer = (state = initialState, action) => {
     switch (action.type) {
         case MSG_ONE:
-            return { message: 'Welcome to my page' }
+            return { ...state, message: 'Welcome to my page' }
         case MSG_TWO:
-            return { message: 'Lets get started' }
+            return { ...state, message: 'Lets get started' }
         default:
             return state
     }
-
 }
 
 export { messageReducer }

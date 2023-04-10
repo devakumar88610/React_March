@@ -5,8 +5,8 @@ class UserDetails extends Component {
 
   render() {
 
-    const { isVisible, close } = this.props;
-    if (!isVisible) return null;
+    // const { isVisible, close } = this.props;
+    // if (!isVisible) return null;
 
     return (
       <>
@@ -29,7 +29,7 @@ class UserDetails extends Component {
         </div> */}
 
 
-        <div className='fixed bg-blue-500 p-10 rounded-2xl shadow-lg'>
+        <div className={'fixed bg-blue-500 p-10 rounded-2xl shadow-lg'}>
           <div className='bg-slate-200 rounded-full overflow-hidden'>
             <img className='w-full h-full hover:scale-125 transition-all duration-300' src={this.props.user.image} alt="" />
           </div>
